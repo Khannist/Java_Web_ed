@@ -1,0 +1,78 @@
+cmd
+type test.py = test.py 파일의 내용을 출력
+ren[rename] test.py text.py = test.py파일을 text.py 파일로 이름을 변경
+
+연산자
++   더하기
+-    빼기
+*    곱하기
+/    나누기(실수)
+//   나누기(정수)
+%   나머지   (1%9 할때 앞의 숫자가 작은숫자라면 결과는 앞의 숫자가 나온다)
+#    주석
+==  관계연산자(참,거짓)
+>    크다
+<    작다
+>=  크거나같다
+<=  작거나같다
+!=   같지않다
+id(a)  a의 어드레스값 확인
+2 ** 3 2의 3승
+
+이스케이프 코드
+\n	줄바꿈
+\t 	탭간격 띄우기
+\\	문자\
+\'	작은 따옴표 표현
+\"	큰 따옴표 표현
+
+
+문자열 연산
+a = "Python"
+b = " is fun"
+a + b	Python is fun
+a * 2	PythonPython
+
+인덱싱 = 문자열의 위치값을 반환
+슬라이싱 = 문자열의 어느 구간을 자른다.
+
+a = "Life is too short"
+len(a) = 17
+a[0] = L
+a[1] = i
+a[2] = f
+a[3] = e
+a[-1] = t
+a[-2] = r
+a[-3] = o
+a[0:4] = Life
+a[0:] = Life is too short
+
+문자열 포멧코드
+%d 정수값
+%s 문자열(String)
+%c 한개 문자(Character)
+%f 소수(float)
+%o 8진수
+%x 16진수
+%% 리터럴 %(문자 % 자체)
+
+number = 3
+day = "three"
+"I eat %d apples %s days" %(number, day)
+I eat 3 apples three days
+
+"%10s" % "Hi"
+'          Hi'
+
+포멧함수 이용한포매팅
+'I eat 3 apples. three days'
+"I eat {0} apples. three days".format(3)
+"I eat {0} apples. three days".format("three")
+"I eat {0} apples.{1} days".format((3),("three"))
+"I eat {0} apples.{1} {2}".format((3),("three"),(days))
+
+name = "송치현"
+age = 25
+f'나의 이름은 {name}입니다. 나의 나이는 {age}입니다.'
+'나의 이름은 송치현입니다. 나의 나이는 25입니다.'
