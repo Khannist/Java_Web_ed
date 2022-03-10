@@ -1,0 +1,132 @@
+cmd
+type test.py = test.py 파일의 내용을 출력
+ren[rename] test.py text.py = test.py파일을 text.py 파일로 이름을 변경
+
+연산자
++   더하기
+-    빼기
+*    곱하기
+/    나누기(실수)
+//   나누기(정수)
+%   나머지   (1%9 할때 앞의 숫자가 작은숫자라면 결과는 앞의 숫자가 나온다)
+#    주석
+==  관계연산자(참,거짓)
+>    크다
+<    작다
+>=  크거나같다
+<=  작거나같다
+!=   같지않다
+id(a)  a의 어드레스값 확인
+2 ** 3 2의 3승
+
+이스케이프 코드
+\n	줄바꿈
+\t 	탭간격 띄우기
+\\	문자\
+\'	작은 따옴표 표현
+\"	큰 따옴표 표현
+
+
+문자열 연산
+a = "Python"
+b = " is fun"
+a + b	Python is fun
+a * 2	PythonPython
+
+인덱싱 = 문자열의 위치값을 반환
+슬라이싱 = 문자열의 어느 구간을 자른다.
+
+문자열 포멧코드
+%d 정수값
+%s 문자열(String)
+%c 한개 문자(Character)
+%f 소수(float)
+%o 8진수
+%x 16진수
+%% 리터럴 %(문자 % 자체)
+
+number = 3
+day = "three"
+"I eat %d apples %s days" %(number, day)
+I eat 3 apples three days
+
+"%10s" % "Hi"
+'          Hi'
+
+포멧함수 이용한포매팅
+'I eat 3 apples. three days'
+"I eat {0} apples. three days".format(3)
+"I eat {0} apples. three days".format("three")
+"I eat {0} apples.{1} days".format((3),("three"))
+"I eat {0} apples.{1} {2}".format((3),("three"),(days))
+
+.count
+변수 해당 되는 문자의 개수 반환 함수
+len()
+글자수를 반환
+.find('b')
+'b'라는 글자가 몇번째에 있는지 반환
+.index('t')
+'t'라는 글자의 위치값 반환
+.join()
+문자열을 삽입
+",".join('abcd')
+,를 abcd 중간에 삽입 한다
+.upper()
+소문자를 대문자로 변환
+.lower()
+대문자를 소문자로 변환
+.capitalize()
+단어의 첫 글자를 대문자로 치환
+.title()
+단어의 첫글자를 대문자로 치환
+.lstrip()
+가장 왼쪽 공백 삭제
+.rstrip()
+가장 오른쪽 공백 삭제
+.strip()
+가장 양끝의 공백 삭제
+.replace("바뀌게 될 문자열", "바꿀 문자열") 
+문자열 안의 특정 값을 다른값으로 치환
+.split()
+공백 또는 특정 문자열을 구분자로 해서 문자열 분리
+type()
+변수의 자료형을 반환
+id()
+변수의 주소값을 반환 (address)
+str()
+문자열로 바꿔주는 함수
+
+리스트
+리스트명 = [요소1, 요소2, 요소3,...]
+
+인덱싱 = 위치값
+슬라이싱 = 구간 자르기
+
+슬라이싱
+a = [1,2,3,4,5]
+a[0:2], a[:2] # 0부터 2 미만까지 출력
+[1, 2]
+del a[0:2] #a리스트의 0번째부터 2-1 번째까지 삭제
+a.sort() # 오름차순 정렬
+a.sort(reverse=True) #내림차순 정렬
+#True 와 False 첫글자 반드시 대문자
+a.reverse() # 순서만 뒤에서부터 거꾸로 출력됨 내림차순 아님
+a.index(3) # 리스트 요소의 3에 해당하는 인덱스의 위치값 반환
+a.insert(0,4) # 리스트 a의 0번째 위치에 4를 삽입하는 함수
+a.remove(3) # 리스트 a에서 처음으로 나오는 3을 삭제하는 함수
+a.pop() # 리스트 a에서 마지막으로 입력된 값을 꺼내는함수
+
+#stack
+push 삽입
+pop 삭제
+Last In First Out(후입선출)
+#Queue
+First In First Out(선입선출)
+
+# underflow
+스택 요소가 비어 있을때 pop(삭제시) 나오는 메세지
+# overflow
+스택 요소가 꽉 차 있을때 push(삽입시) 나오는 메세지
+
+
