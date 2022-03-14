@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>텍스트 연습</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +44,7 @@
         <li>볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면 끝!</li>
     </ol>
     <h2>상품 구성</h2>
-    <dl>
+    <!-- <dl>
         <dt>선물용 3kg</dt>
         <dd>소과 13~16과</dd>
         <dd>중과 10~12과</dd>
@@ -39,10 +52,50 @@
     <dl>
         <dt>선물용 5kg</dt>
         <dd>중과 15~19과</dd>
-    </dl>
+    </dl> -->
 
-    
-    
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <colgroup>
+            <col style="background-color: rgb(241, 241, 241);">
+            <col style="width: 120;">
+            <col span="2" style="width: 150px;">
+        </colgroup>
+        <thead>
+            <strong>
+                <tr>
+                    <th>용도</th>
+                    <th>중량</th>
+                    <th>갯수</th>
+                    <th>가격</th>
+                </tr>
+            </strong>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">가정용</td>
+                <td>3kg</td>
+                <td>11~26과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
