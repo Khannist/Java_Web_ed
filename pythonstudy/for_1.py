@@ -1,10 +1,29 @@
-numbers = [1,2,3,4,5,6,7]
-total = 0
+# while True:
+#     print("Ctrl + C를 눌러야 WHILE문을 빠져 나갈 수 있습니다.")
 
-for n in numbers:
-    if n % 2   == 0:
-        total += n
-        
-print("total : ", total)
-#실행결과
-#total : 12
+
+marks = [90, 25, 67, 45, 80]
+number = 0
+
+# for mark in marks:
+#     number += 1
+#     if mark >= 60:
+#         print("%d번 학생은 합격입니다."% number)
+#     else:
+#         print("%d번 학생은 불합격입니다."% number)
+
+
+
+for mark in marks:
+    number += 1
+    if mark < 60: # < 반대기호는 >=
+        continue
+    print("%d번 학생 축하합니다. 합격입니다."% number)
+
+
+
+for mark in marks:
+    number += 1
+    if mark >= 60: # < 반대기호는 >=
+        continue
+    print("%d번 학생 불합격입니다. 다음기회에 볼게요."% number)
