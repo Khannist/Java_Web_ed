@@ -41,6 +41,19 @@
                     <label for="usr_pwdc">비밀번호 확인</label>
                     <input type="password" id="usr_pwdc" required>
                 </li>
+                <li>
+                    <label for="usr_sign">가입 경로</label>
+                    <select id="usr_sign">
+                        <option value="s_1">블로그</option>
+                        <option value="s_2">검색</option>
+                        <option value="s_3">SNS</option>
+                        <option value="s_4">기타</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="usr_memo">메모</label>
+                    <textarea id="usr_memo" cols="30" rows="5" placeholder="남길 말씀이 있다면 여기에"></textarea>
+                </li>
             </ul>
         </fieldset>
  
@@ -49,8 +62,8 @@
             <input type="radio" name="mail_send" value="yes" checked><label>메일 수신</label>
             <input type="radio" name="mail_send" value="no"><label>메일 수신 안함</label>
         </fieldset>
-        <input type="submit" value="가입하기">
-        <input type="reset" value="취소">
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
     </form>
 </body>
 
