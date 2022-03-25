@@ -142,11 +142,19 @@ for unit in attack_units:
 for unit in attack_units:
     unit.attack("1시")
     
+a = 1
+temp = ""
 for unit in attack_units:
+    if  temp == unit.name:
+        a += 1
+    else:
+        a = 1
     while True:
         if unit.hp > 0:
+            print(unit.name, a)
             unit.damaged(randint(22, 100))
         else:
             break
-    
+    temp = unit.name
+        
 game_over()
